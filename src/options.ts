@@ -34,6 +34,10 @@ export const getEnvironment = (): string => {
   return core.getInput('environment');
 };
 
+export const getUrl = (): string => {
+  return core.getInput('url');
+};
+
 /**
  * Optionally get a UNIX timestamp of when the deployment started.
  * Input timestamp may also be ISO 8601.
